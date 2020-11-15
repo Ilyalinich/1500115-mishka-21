@@ -7,49 +7,49 @@
   <body class="page__body">
 
     <header class="page-header">
-      <div class="page-header__top top-menu">
-        <div class="top-menu__wrapper">
-          <nav class="top-menu__nav main-nav">
-            <a class="main-nav__logo logo">
-              <img src="https://via.placeholder.com/86x35" width="86" height="35" alt="Логотип магазина «Мишка»">
-            </a>
-            <button class="main-nav__toggle" type="button">
-              <span class="visually-hidden">Открыть меню</span>
-            </button>
-            <ul class="main-nav__list site-list">
-              <li class="site-list__item">
-                <a href="">Каталог товаров</a>
-              </li>
-              <li class="site-list__item">
-                <a href="">Вязание на заказ</a>
-              </li>
-            </ul>
-            <ul class="main-nav__list user-list">
-              <li class="user-list__item">
-                <a href="">Поиск по сайту</a>
-              </li>
-              <li class="user-list__item">
-                <a href="">Корзина: пока пуста</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
+      <div class="page-header__wrapper">
+        <nav class="page-header__nav main-nav">
+          <a class="main-nav__logo logo">
+            <img src="https://via.placeholder.com/86x35" width="86" height="35" alt="Логотип магазина «Мишка»">
+          </a>
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a href="">Каталог товаров</a>
+            </li>
+            <li class="site-list__item">
+              <a href="">Вязание на заказ</a>
+            </li>
+          </ul>
+          <ul class="main-nav__list user-list">
+            <li class="user-list__item">
+              <a href="">Поиск по сайту</a>
+            </li>
+            <li class="user-list__item">
+              <a href="">Корзина: пока пуста</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <div class="page-header__bottom page-banner">
-        <div class="page-banner__wrapper">
-          <nav class="page-banner__top-nav info-nav">
-            <ul class="info-nav__list">
-              <li class="info-nav__item">
-                <a class="info-nav__link" href="#">Новые поступления</a>
-              </li>
-              <li class="info-nav__item">
-                <a class="info-nav__link" href="#">распродажа</a>
-              </li>
-            </ul>
-          </nav>
-          <p class="page-banner__delivery-info">Бесплатная доставка по России</p>
-          <h1 class="page-banner__title">Милые штуки ручной работы для дома</h1>
-          <nav class="page-banner__bottom-nav product-nav">
+    </header>
+
+    <main class="page-main">
+
+      <section class="main-header">
+        <div class="main-header__wrapper">
+          <ul class="breadcrumbs-list">
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="#">Новые поступления</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="#">распродажа</a>
+            </li>
+          </ul>
+          <p class="main-header__delivery-info">Бесплатная доставка по России</p>
+          <h1 class="main-header__title">Милые штуки ручной работы для дома</h1>
+          <nav class="product-nav">
             <ul class="product-nav__list">
               <li class="product-nav__item product-nav__item--interior">
                 <a class="product-nav__link" href="#">Предметы интерьера</a>
@@ -60,39 +60,36 @@
             </ul>
           </nav>
         </div>
-      </div>
-    </header>
-
-    <main class="page-main">
+      </section>
 
       <section class="week-product">
         <div class="week-product__wrapper">
           <header class="week-product__header">
-            <p class="week-product__name">Вязаные корзинки</p>
-            <h2 class="week-product__title">Товар недели</h2>
+            <h2 class="week-product__product-title">Вязаные корзинки</h2>
+            <p class="week-product__product-label">Товар недели</p>
           </header>
           <div class="week-product__description">
             <p class="week-product__info">Экологически чистая пряжа,
               ручная работа. Доступны в шести расцветках, и трех размерах.
             </p>
-            <dl class="week-product__description-list">
-              <div class="week-product__description-item">
-                <dt class="week-product__parameter">Цвет:</dt>
-                <dd class="week-product__value">«Тиффани»/серый</dd>
-              </div>
-              <div class="week-product__description-item">
-                <dt class="week-product__parameter">Диаметр:</dt>
-                <dd class="week-product__value">25 см</dd>
-              </div>
-              <div class="week-product__description-item">
-                <dt class="week-product__parameter">Высота:</dt>
-                <dd class="week-product__value">15 см</dd>
-              </div>
-            </dl>
+            <table class="week-product__description-table parameters-table">
+              <tr class="parameters-table__row">
+                <td class="parameters-table__data">Цвет:</td>
+                <td class="parameters-table__data">«Тиффани»/серый</td>
+              </tr>
+              <tr class="parameters-table__row">
+                <td class="parameters-table__data">Диаметр:</td>
+                <td class="parameters-table__data">25 см</td>
+              </tr>
+              <tr class="parameters-table__row">
+                <td class="parameters-table__data">Высота:</td>
+                <td class="parameters-table__data">15 см</td>
+              </tr>
+            </table>
           </div>
           <img class="week-product__photo" src="https://via.placeholder.com/260x315" width="260" height="315" alt="Вязаные корзинки (плохой alt)">
           <p class="week-product__price">Цена: 990 руб.</p>
-          <a class="week-product__order-link button" href="#">Заказать</a>
+          <a class="week-product__order button" href="#">Заказать</a>
         </div>
       </section>
 
@@ -146,18 +143,18 @@
       <section class="contacts">
         <div class="contacts__details contacts__wrapper">
           <h2 class="contacts__title">Контакты</h2>
-          <dl class="contacts__description-list">
-            <div class="contacts__description-item">
-              <dt class="contacts__parameter">e-mail:</dt>
-              <dd class="contacts__value">
-                <a class="contacts__e-mail" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
-              </dd>
-            </div>
-            <div class="contacts__description-item">
-              <dt class="contacts__parameter">адрес:</dt>
-              <dd class="contacts__value">г. Санкт-Петербург <br> ул. Большая Конюшенная <br> д. 19/8, офис 101</dd>
-            </div>
-          </dl>
+          <table class="contacts__description-table contacts-table">
+            <tr class="contacts-table__row">
+              <td class="contacts-table__data">e-mail:</td>
+              <td class="contacts-table__data table-data">
+                <a class="table-data__e-mail" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+              </td>
+            </tr>
+            <tr class="contacts-table__row">
+              <td class="contacts-table__data">адрес:</td>
+              <td class="contacts-table__data">г. Санкт-Петербург <br> ул. Большая Конюшенная <br> д. 19/8, офис 101</td>
+            </tr>
+          </table>
         </div>
         <div class="contacts__map">
           <h2 class="visually-hidden">Карта с указанием местоположения магазина «Мишка»</h2>
