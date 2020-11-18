@@ -1,0 +1,16 @@
+.button {
+  display: inline-block;
+  box-sizing: border-box;
+
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  color: $color-basic-grey;
+  border: 2px solid $color-basic-grey;
+
+  font-size: 18px;
+  line-height: 20px;
+}

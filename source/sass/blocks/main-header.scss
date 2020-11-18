@@ -1,0 +1,23 @@
+.main-header {
+  background-color: $color-soft-grey;
+  min-height: 575px;
+  padding-top: 90px;
+  box-sizing: border-box;
+}
+
+.main-header__wrapper {
+  padding: 0 30px;
+  text-align: center;
+}
+
+.main-header__title {
+  font-size: 27px;
+  font-weight: bold;
+  line-height: 30px;
+}
+
+.main-header--mobile {
+  background-image: url("../img/hero-mobile .jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
