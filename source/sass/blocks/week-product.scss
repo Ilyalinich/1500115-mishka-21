@@ -1,0 +1,33 @@
+.week-product__wrapper {
+  padding: 0 30px;
+}
+
+.week-product__product-title {
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 30px;
+}
+
+.week-product__product-label {
+  color: $color-basic-light-green;
+  text-transform: uppercase;
+
+  font-weight: bold;
+  line-height: 20px;
+}
+
+.week-product__info {
+  color: $color-basic-grey;
+
+  font-size: 15px;
+}
+
+.week-product__price {
+  color: $color-basic-grey;
+}
+
+.week-product__order {
+  padding: 16px 70px;
+  min-width: 260px;
+  min-height: 52px;
+}

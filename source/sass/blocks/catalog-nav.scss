@@ -1,0 +1,18 @@
+
+.catalog-nav__item {
+  font-size: 19px;
+  font-weight: bold;
+}
+
+.catalog-nav__item--interior {
+  background-color: $color-basic-light-green;
+}
+
+.catalog-nav__item--toys {
+  background-color: $color-basic-dark-green;
+}
+
+.catalog-nav__link {
+  color: $color-basic-white;
+  text-decoration: none;
+}
