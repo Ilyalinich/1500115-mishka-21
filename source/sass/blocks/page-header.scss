@@ -1,3 +1,8 @@
+.page-header {
+  outline: 5px solid rgba(0, 255, 0, 0.3);
+  outline-offset: -5px;
+}
+
 .page-header__wrapper {
   padding: 0 30px;
 }
@@ -6,4 +11,6 @@
   color: $color-basic-grey;
 
   font-size: 15px;
+
+  margin: 0;
 }
