@@ -1,0 +1,47 @@
+.order-form {
+  outline: 5px solid rgba(0, 255, 0, 0.3);
+  outline-offset: -5px;
+}
+
+.order-form__caption {
+  font-size: 13px;
+}
+
+.order-form__fieldset {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.order-form__legend {
+  padding: 0;
+  color: $color-basic-light-green;
+
+  font-weight: bold;
+  line-height: 16px;
+}
+
+.order-form__wrapper {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.order-form__list {
+  list-style: none;
+  padding: 0;
+}
+
+.order-form__label {
+  font-weight: bold;
+  line-height: 18px;
+}
+
+.order-form__input {
+  display: block;
+}
+
+.order-form__submit {
+  padding: 18px 37px;
+  min-width: 260px;
+  min-height: 52px;
+}

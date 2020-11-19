@@ -18,18 +18,18 @@
           </button>
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-              <a href="catalog.html">Каталог товаров</a>
+              <a class="site-list__link" href="catalog.html">Каталог товаров</a>
             </li>
             <li class="site-list__item">
-              <a href="form.html">Вязание на заказ</a>
+              <a class="site-list__link" href="form.html">Вязание на заказ</a>
             </li>
           </ul>
           <ul class="main-nav__list user-list">
             <li class="user-list__item">
-              <a href="#">Поиск по сайту</a>
+              <a class="user-list__link" href="#">Поиск по сайту</a>
             </li>
             <li class="user-list__item">
-              <a href="#">Корзина: пока пуста</a>
+              <a class="user-list__link" href="#">Корзина: пока пуста</a>
             </li>
           </ul>
           <ul class="main-nav__list product-class-list">
@@ -47,29 +47,30 @@
 
     <main class="page-main">
 
-      <div class="main-header">
+      <div class="page-main__header main-header">
         <h1 class="main-header__title">Вязание на заказ</h1>
       </div>
 
-      <section class="order-form">
+      <section class="page-main__form order-form">
         <h2 class="visually-hidden">Форма заказа</h2>
-        <p class="order-form__caption">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
-        <form class="order-form__form" method="get" action="https://echo.htmlacademy.ru">
-          <fieldset class="order-form__fieldset">
-            <legend class="order-form__legend">Тип</legend>
-            <ul class="order-form__list">
-              <li class="order-form__item">
-                <input class="visually-hidden" type="radio" name="type" id="interior" value="interior" checked>
-                <label class="order-form__label" for="interior">Аксессуар для интерьера</label>
-              </li>
-              <li class="type-item">
-                <input class="visually-hidden" type="radio" name="type" id="toy" value="toy">
-                <label class="order-form__label" for="toy">Детская игрушка</label>
-              </li>
-            </ul>
-          </fieldset>
+        <div class="order-form__wrapper">
+          <form class="order-form__form" method="get" action="https://echo.htmlacademy.ru">
+            <p class="order-form__caption">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+            <fieldset class="order-form__fieldset">
+              <legend class="order-form__legend">Тип</legend>
+              <ul class="order-form__list">
+                <li class="order-form__item">
+                  <input class="visually-hidden" type="radio" name="type" id="interior" value="interior" checked>
+                  <label class="order-form__label" for="interior">Аксессуар для интерьера</label>
+                </li>
+                <li class="order-form__item">
+                  <input class="visually-hidden" type="radio" name="type" id="toy" value="toy">
+                  <label class="order-form__label" for="toy">Детская игрушка</label>
+                </li>
+              </ul>
+            </fieldset>
 
-          <fieldset class="order-form__fieldset">
+            <fieldset class="order-form__fieldset">
               <legend class="order-form__legend">Цвет</legend>
               <ul class="order-form__list">
                 <li class="order-form__item">
@@ -97,48 +98,49 @@
                   <label class="order-form__label" for="orange">Оранжевый</label>
                 </li>
               </ul>
-          </fieldset>
+            </fieldset>
 
-          <fieldset class="order-form__fieldset">
-            <legend class="order-form__legend">Фио</legend>
-            <ul class="order-form__list">
-              <li class="order-form__item">
-                <label class="order-form__label" for="name">Имя:</label>
-                <input class="order-form__input" type="text" name="name" id="name" placeholder="Введите ваше имя*" required>
-              </li>
-              <li class="order-form__item">
-                <label class="order-form__label" for="surname">Фамилия:</label>
-                <input class="order-form__input" type="text" name="surname" id="surname" placeholder="Укажите фамилию*" required>
-              </li>
-              <li class="order-form__item">
-                <label class="order-form__label" for="middle-name">Отчество:</label>
-                <input class="order-form__input" type="text" name="middle-name" id="middle-name" placeholder="Отчество, если желаете">
-              </li>
-            </ul>
-          </fieldset>
+            <fieldset class="order-form__fieldset">
+              <legend class="order-form__legend">Фио</legend>
+              <ul class="order-form__list">
+                <li class="order-form__item">
+                  <label class="order-form__label" for="name">Имя:</label>
+                  <input class="order-form__input text-input" type="text" name="name" id="name" placeholder="Введите ваше имя*" required>
+                </li>
+                <li class="order-form__item">
+                  <label class="order-form__label" for="surname">Фамилия:</label>
+                  <input class="order-form__input text-input" type="text" name="surname" id="surname" placeholder="Укажите фамилию*" required>
+                </li>
+                <li class="order-form__item">
+                  <label class="order-form__label" for="middle-name">Отчество:</label>
+                  <input class="order-form__input text-input" type="text" name="middle-name" id="middle-name" placeholder="Отчество, если желаете">
+                </li>
+              </ul>
+            </fieldset>
 
-          <fieldset class="order-form__fieldset">
-            <legend class="order-form__legend">Тел</legend>
-            <label class="visually-hidden" for="tel">Ваш номер телефона</label>
-            <input class="order-form__input" type="tel" name="tel" id="tel" pattern="\+[7]{1}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
-          </fieldset>
+            <fieldset class="order-form__fieldset">
+              <legend class="order-form__legend">Тел</legend>
+              <label class="visually-hidden" for="tel">Ваш номер телефона</label>
+              <input class="order-form__input" type="tel" name="tel" id="tel" pattern="\+[7]{1}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+            </fieldset>
 
-          <fieldset class="order-form__fieldset">
-            <legend class="order-form__legend">e-mail</legend>
-            <label class="visually-hidden" for="email">Ваш адрес электроной почты</label>
-            <input class="order-form__input" type="email" name="email" id="email" placeholder="Ваш Email*" required>
-          </fieldset>
+            <fieldset class="order-form__fieldset">
+              <legend class="order-form__legend">e-mail</legend>
+              <label class="visually-hidden" for="email">Ваш адрес электроной почты</label>
+              <input class="order-form__input" type="email" name="email" id="email" placeholder="Ваш Email*" required>
+            </fieldset>
 
-          <fieldset class="order-form__fieldset">
-            <legend class="order-form__legend">Доп</legend>
-            <label class="visually-hidden" for="addition-note">Поле для дополнительных пожеланий</label>
-            <input class="order-form__input" name="addition-note" id="addition-note" placeholder="Опишите все ваши пожелания к заказу">
-          </fieldset>
+            <fieldset class="order-form__fieldset">
+              <legend class="order-form__legend">Доп</legend>
+              <label class="visually-hidden" for="addition-note">Поле для дополнительных пожеланий</label>
+              <input class="order-form__input" name="addition-note" id="addition-note" placeholder="Опишите все ваши пожелания к заказу">
+            </fieldset>
 
-          <small class="order-form__reminder">*Поля обязательны для заполнения</small>
-          <button type="submit" class="order-form__submit button">Отправить заказ</button>
+            <small class="order-form__reminder">*Поля обязательны для заполнения</small>
+            <button type="submit" class="order-form__submit button">Отправить заказ</button>
 
-        </form>
+          </form>
+        </div>
       </section>
 
     </main>
