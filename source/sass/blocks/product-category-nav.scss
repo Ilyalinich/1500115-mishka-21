@@ -1,23 +1,23 @@
 
-.catalog-nav__list {
+.product-category-nav__list {
   list-style: none;
   padding: 0;
 }
 
-.catalog-nav__item {
+.product-category-nav__item {
   font-size: 19px;
   font-weight: bold;
 }
 
-.catalog-nav__item--interior {
+.product-category-nav__item--interior {
   background-color: $color-basic-light-green;
 }
 
-.catalog-nav__item--toys {
+.product-category-nav__item--toys {
   background-color: $color-basic-dark-green;
 }
 
-.catalog-nav__link {
+.product-category-nav__link {
   color: $color-basic-white;
   text-decoration: none;
 }

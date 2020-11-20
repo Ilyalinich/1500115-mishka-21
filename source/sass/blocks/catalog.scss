@@ -1,0 +1,23 @@
+.catalog {
+  outline: 5px solid rgba(0, 255, 0, 0.3);
+  outline-offset: -5px;
+}
+
+.catalog__wrapper {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.catalog__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.catalog__item {
+  margin-bottom: 30px;
+}
+
+.catalog__item:last-child {
+  margin-bottom: 0;
+}

@@ -1,0 +1,29 @@
+.product-card {
+  outline: 5px solid rgba(47, 0, 255, 0.3);
+  outline-offset: -5px;
+}
+
+.product-card__link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.product-card__info {
+  padding: 28px;
+}
+
+.product-card__title {
+  font-size: 17px;
+  margin: 0;
+}
+
+.product-card__parameters {
+  font-size: 13px;
+  line-height: 30px;
+}
+
+.product-card__price {
+  font-size: 15px;
+
+  border-top: 1px solid $color-light-grey;
+}
