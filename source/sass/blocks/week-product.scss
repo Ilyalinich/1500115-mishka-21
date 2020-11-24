@@ -4,7 +4,54 @@
 }
 
 .week-product__wrapper {
+  box-sizing: border-box;
   padding: 0 30px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  min-height: 795px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 50px 69px;
+
+    position: relative;
+
+    min-height: 600px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 150px;
+    padding-left: 175px;
+    min-height: 732px;
+    max-width: 1150px;
+    margin: 0 auto;
+  }
+}
+
+.week-product__header {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.week-product__photo {
+  @media (min-width: $tablet-width) {
+    width: 334px;
+    height: 404px;
+
+    position: absolute;
+    right: 50px;
+    bottom: 69px;
+    z-index: -1;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 525px;
+    height: 636px;
+  }
 }
 
 .week-product__product-title {
@@ -13,6 +60,10 @@
   line-height: 30px;
 
   margin: 0;
+
+  @media (min-width: $desktop-width) {
+    width: 66%;
+  }
 }
 
 .week-product__product-label {
@@ -21,20 +72,65 @@
 
   font-weight: bold;
   line-height: 20px;
+
+  margin: 0;
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    left: 32px;
+  }
 }
 
 .week-product__info {
   color: $color-basic-grey;
-
   font-size: 15px;
+
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 45%;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 33%;
+  }
+}
+
+.week-product__description-table {
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    width: 45%;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 33%;
+  }
+}
+
+.week-product__footer {
+  @media (min-width: $tablet-width) {
+    width: 45%;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 33%;
+  }
 }
 
 .week-product__price {
   color: $color-basic-grey;
+
+  font-weight: bold;
+  text-align: center;
+
+  margin: 0;
 }
 
 .week-product__order {
   padding: 16px 70px;
   min-width: 260px;
   min-height: 52px;
+
+  width: 100%;
 }
