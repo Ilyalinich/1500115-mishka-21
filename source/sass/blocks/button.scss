@@ -1,11 +1,10 @@
 .button {
-  display: inline-block;
+  display: block;
   box-sizing: border-box;
 
   cursor: pointer;
   text-align: center;
   text-decoration: none;
-  vertical-align: middle;
   text-transform: uppercase;
 
   color: $color-basic-grey;

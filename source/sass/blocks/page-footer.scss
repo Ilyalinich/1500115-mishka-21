@@ -7,4 +7,48 @@
 
 .page-footer__wrapper {
   padding: 0 30px;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__wrapper {
+    padding: 0 50px;
+    flex-direction: row;
+    justify-content: space-between;
+
+    min-height: 143px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__wrapper {
+    max-width: 1150px;
+    margin: 0 auto;
+  }
+}
+
+.page-footer__logo {
+  display: block;
+}
+
+@media (max-width: $mobile-width-only) {
+  .page-footer__logo {
+    display: none;
+  }
+}
+
+.page-footer__social {
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.page-footer__copyright {
+  min-height: 80px;
+  display: flex;
+  align-items: center;
 }

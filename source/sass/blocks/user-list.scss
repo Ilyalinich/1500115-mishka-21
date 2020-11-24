@@ -1,5 +1,20 @@
 .user-list {
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    order: -1;
+    flex-basis: 50%;
+    justify-content: flex-end;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 0;
+    flex-basis: 40%;
+  }
+}
+
+.user-list__item {
+  min-height: 79px;
 }
 
 .user-list__link {

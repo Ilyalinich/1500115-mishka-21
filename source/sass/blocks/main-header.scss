@@ -2,30 +2,62 @@
   background-color: $color-soft-grey;
   min-height: 177px;
   box-sizing: border-box;
-  padding-top: 73px;
 
   outline: 5px solid rgba(0, 255, 0, 0.3);
   outline-offset: -5px;
+
+  padding-top: 73px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 101px;
+  }
+}
+
+.main-header--index-page {
+  background-image: url("../img/hero-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/hero-desktop.jpg");
+    padding-top: 150px;
+  }
 }
 
 .main-header__wrapper {
-  padding-left: 30px;
-  padding-right: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  min-height: 416px;
+
+  @media (min-width: $tablet-width) {
+    box-sizing: border-box;
+    padding-left: 50px;
+    padding-right: 50px;
+
+    min-height: 608px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1150px;
+    margin: 0 auto;
+  }
 }
 
+
 .main-header__title {
+  align-self: center;
+
+  min-width: 260px;
+
+  padding-left: 30px;
+  padding-right: 30px;
+
   font-size: 27px;
   font-weight: bold;
   line-height: 30px;
   text-align: center;
 
   margin: 0;
-}
-
-.main-header--index-page {
-  background-image: url("../img/hero-mobile .jpg");
-  background-repeat: no-repeat;
-  background-position: top;
-
-  min-height: 489px;
 }

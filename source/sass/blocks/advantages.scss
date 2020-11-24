@@ -5,6 +5,16 @@
 
 .advantages__wrapper {
   padding: 0 30px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 50px;
+    margin: 0 auto;
+    max-width: 668px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 699px;
+  }
 }
 
 .advantages__title {
@@ -22,4 +32,40 @@
 
   font-weight: bold;
   line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .advantages__item {
+    width: 50%;
+    min-height: 90px;
+
+    &--flower {
+      order: 1;
+    }
+
+    &--ball {
+      order: 2;
+    }
+
+    &--money {
+      order: 3;
+    }
+
+    &--rocket {
+      order: 4;
+    }
+
+    &--heart {
+      order: 5;
+    }
+
+    &--present {
+      order: 6;
+    }
+  }
 }
