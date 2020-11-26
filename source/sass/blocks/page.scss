@@ -15,8 +15,4 @@
 
   display: grid;
   grid-template-rows: min-content 1fr min-content;
-
-  @media (min-width: $tablet-width) {
-    grid-template-rows: 88px 150px 1fr min-content;
-  }
 }
