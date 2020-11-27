@@ -1,11 +1,29 @@
 .production-video {
   outline: 5px solid rgba(0, 255, 0, 0.3);
   outline-offset: -5px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    align-items: flex-end;
+
+    min-height: 455px;
+  }
 }
 
-.production-video__wrapper {
-  padding-left: 30px;
-  padding-right: 30px;
+.production-video__container {
+  padding: 0 34px;
+  box-sizing: border-box;
+
+  @media (min-width: $desktop-width) {
+    padding-left: 80px;
+    padding-right: 57px;
+    width: 367px;
+  }
 }
 
 .production-video__title {
@@ -14,6 +32,24 @@
   line-height: 24px;
 
   margin: 0;
+}
+
+.production-video__photo {
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    min-width: 668px;
+    min-height: 455px;
+
+    order: -1;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    left: 0;
+    width: 683px;
+    height: 455px;
+  }
 }
 
 .production-video__caption {
