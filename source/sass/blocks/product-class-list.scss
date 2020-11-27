@@ -4,6 +4,9 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
+    position: absolute;
+    font-size: 15px;
+    bottom: -30px;
   }
 }
 

@@ -1,0 +1,29 @@
+.contact-details-list__item {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.contact-details-list__label {
+  color: $color-basic-light-green;
+
+  font-weight: bold;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.contact-details-list__input {
+  display: block;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: 75%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 86%;
+  }
+}

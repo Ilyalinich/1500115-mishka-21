@@ -1,0 +1,33 @@
+.order-wishes {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.order-wishes__label {
+  color: $color-basic-light-green;
+
+  font-weight: bold;
+  line-height: 16px;
+
+  text-transform: uppercase;
+}
+
+.order-wishes__input {
+  display: block;
+  width: 100%;
+  padding: 0;
+  padding-left: 10px;
+  box-sizing: border-box;
+
+  min-height: 142px;
+
+  @media (min-width: $tablet-width) {
+    width: 75%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 86%;
+  }
+}

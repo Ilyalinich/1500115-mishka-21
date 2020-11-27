@@ -1,0 +1,21 @@
+.personal-list__item {
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
+
+.personal-list__label {
+  font-weight: bold;
+  line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 25px;
+  }
+}
+
+.personal-list__input {
+  display: block;
+  width: 100%;
+  padding: 0;
+  box-sizing: border-box;
+}

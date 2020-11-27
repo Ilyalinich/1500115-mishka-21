@@ -1,0 +1,21 @@
+.color-list {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.color-list__item {
+  @media (min-width: $tablet-width) {
+    width: 47.7%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 33%;
+  }
+}
+
+.color-list__label {
+  font-weight: bold;
+  line-height: 18px;
+}
