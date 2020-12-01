@@ -1,6 +1,4 @@
 .user-list {
-  list-style: none;
-
   @media (min-width: $tablet-width) {
     flex-basis: 50%;
     justify-content: flex-end;
@@ -11,11 +9,3 @@
   }
 }
 
-.user-list__item {
-  min-height: 40px;
-}
-
-.user-list__link {
-  text-decoration: none;
-  color: inherit;
-}

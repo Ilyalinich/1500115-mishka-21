@@ -1,6 +1,19 @@
 .reviews {
   outline: 5px solid rgba(0, 255, 0, 0.3);
   outline-offset: -5px;
+
+  padding-bottom: 51px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 79px;
+    padding-bottom: 132px;
+    background-image: url("../img/reviews-fone.jpg");
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 186px;
+  }
 }
 
 .reviews__wrapper {
@@ -8,20 +21,19 @@
   padding: 0 30px;
 
   @media (min-width: $tablet-width) {
-    padding: 0 50px 132px;
+    padding: 0 50px;
 
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: flex-start;
 
     position: relative;
   }
 
   @media (min-width: $desktop-width) {
     padding-left: 175px;
-
-    max-width: 1150px;
-    margin: 0 auto;
+    padding-right: 0;
   }
 }
 
@@ -31,16 +43,34 @@
   line-height: 30px;
 
   margin: 0;
+  margin-bottom: 14px;
 
   @media (min-width: $tablet-width) {
     order: -2;
 
     width: 70%;
+
+    font-size: 43px;
+    line-height: 50px;
+
+    margin-bottom: 39px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+
+    margin-bottom: 35px;
   }
 }
 
 .reviews__item {
   margin: 0;
+  margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .reviews__text {
@@ -49,10 +79,22 @@
 
   margin: 0;
   margin-bottom: 33px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    line-height: 30px;
+
+    margin-bottom: 61px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 44px;
+  }
 }
 
 .reviews__autor-name {
   font-weight: bold;
+  font-style: normal;
 }
 
 .reviews__autor-e-mail {
@@ -63,36 +105,57 @@
 
 .reviews__toggles {
   display: flex;
+  margin-bottom: 38px;
 
   @media (min-width: $tablet-width) {
     position: absolute;
     right: 50px;
-    bottom: 132px;
+    bottom: 15px;
+    margin-bottom: 0;
+    margin-right: 19px;
   }
 }
 
-.reviews__previous {
-  min-width: 130px;
+.reviews__toggle {
+  width: 50%;
   background-color: $color-basic-white;
+  min-height: 52px;
+  border: 1px solid $color-light-grey;
+  padding: 0;
+  cursor: pointer;
+
+  &:hover path,
+  &:focus path {
+    opacity: 0.6;
+  }
+
+  &:active path {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    min-height: auto;
+    border: none;
+  }
 }
 
-.reviews__next {
-  min-width: 130px;
-  background-color: $color-basic-white;
+.reviews__toggle:first-child {
+  border-right: none;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 37px;
+  }
 }
 
 .reviews__write {
-  display: block;
-
-  padding: 16px 26px;
+  padding: 14px 26px;
   min-width: 175px;
   min-height: 52px;
 
   @media (min-width: $tablet-width) {
     order: -1;
-    right: 50px;
+    align-self: start;
 
-    width: 175px;
-    min-height: 52px;
+    font-size: 17px;
   }
 }

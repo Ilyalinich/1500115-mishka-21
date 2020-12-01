@@ -1,0 +1,116 @@
+
+.product-category-list {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: flex-end;
+  }
+}
+
+.product-category-list__item {
+  @media (min-width: $tablet-width) {
+    flex-basis: 50%;
+  }
+}
+
+.product-category-list__link {
+  display: block;
+  color: $color-basic-white;
+  text-decoration: none;
+  font-size: 19px;
+  font-weight: bold;
+  box-sizing: border-box;
+  min-height: 103px;
+  padding: 24px 110px 31px 30px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 131px;
+    padding: 25px 110px 34px 36px;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 136px;
+    padding-bottom: 46px;
+  }
+}
+
+.product-category-list__link--interior {
+  background-color: $color-basic-light-green;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    top: 23px;
+    right: 36px;
+    content: "";
+    width: 40px;
+    height: 60px;
+    background-image: url("../img/interior.svg");
+    opacity: 0.5;
+
+    @media (min-width: $tablet-width) {
+      top: 30px;
+    }
+  }
+
+  &:focus,
+  &:hover {
+    background-color: $color-basic-middle-green;
+
+    &::after {
+      opacity: 0.7;
+    }
+  }
+
+  &:active {
+    background-color: $color-basic-middle-green;
+
+    &::after {
+      opacity: 0.3;
+    }
+  }
+}
+
+.product-category-list__link--toys {
+  background-color: $color-basic-dark-green;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    top: 21px;
+    right: 27px;
+    content: "";
+    width: 60px;
+    height: 60px;
+    background-image: url("../img/toy.svg");
+    opacity: 0.5;
+
+    @media (min-width: $tablet-width) {
+      top: 31px;
+      right: 33px;
+    }
+
+    @media (min-width: $desktop-width) {
+      right: 35px;
+    }
+  }
+
+  &:focus,
+  &:hover {
+    background-color: $color-basic-hard-green;
+
+    &::after {
+      opacity: 0.7;
+    }
+  }
+
+  &:active {
+    background-color: $color-basic-hard-green;
+
+    &::after {
+      opacity: 0.3;
+    }
+  }
+}
