@@ -1,21 +1,7 @@
-.user-list {
-  list-style: none;
-
-  @media (min-width: $tablet-width) {
-    flex-basis: 50%;
-    justify-content: flex-end;
-  }
-
-  @media (min-width: $desktop-width) {
-    flex-basis: 40%;
-  }
-}
-
-.user-list__item {
-  min-height: 40px;
-}
 
 .user-list__link {
-  text-decoration: none;
-  color: inherit;
+  @media (min-width: $tablet-width) {
+    min-height: 89px;
+    border-left: 1px solid rgba($color-basic-black, 0.1);
+  }
 }

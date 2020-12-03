@@ -1,16 +1,21 @@
 .product-class-list {
-  list-style: none;
   display: none;
 
   @media (min-width: $desktop-width) {
     display: flex;
-    position: absolute;
     font-size: 15px;
-    bottom: -30px;
+
+    width: calc(100% - 400px);
   }
 }
 
-.product-class-list__link {
-  text-decoration: none;
-  color: inherit;
+.product-class-list__item {
+  @media (min-width: $desktop-width) {
+    width: 185px;
+    margin-right: 35px;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
 }

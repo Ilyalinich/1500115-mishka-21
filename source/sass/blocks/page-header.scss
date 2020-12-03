@@ -1,30 +1,22 @@
 .page-header {
-  outline: 5px solid rgba(38, 0, 255, 0.3);
-  outline-offset: -5px;
+  border-bottom: 1px solid $color-light-grey;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: 1px solid rgba($color-basic-black, 0.1);
+  }
 }
 
 .page-header__wrapper {
   @media (min-width: $tablet-width) {
-    box-sizing: border-box;
     padding-left: 50px;
     padding-right: 50px;
-
-    min-height: 89px;
 
     position: relative;
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 1150px;
+    max-width: 1050px;
     margin: 0 auto;
-  }
-}
-
-.page-header__nav {
-  @media (min-width: $tablet-width) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
   }
 }
 
@@ -41,7 +33,7 @@
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    bottom: -30px;
+    bottom: -46px;
     right: 50px;
   }
 }
