@@ -1,18 +1,15 @@
 .advantages {
-  outline: 5px solid rgba(0, 255, 0, 0.3);
-  outline-offset: -5px;
-
   padding-top: 31px;
   padding-bottom: 58px;
 
   @media (min-width: $tablet-width) {
     padding-top: 56px;
-    padding-bottom: 83px;
+    padding-bottom: 69px;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 68px;
-    padding-bottom: 90px;
+    padding-bottom: 73px;
   }
 }
 
@@ -121,7 +118,8 @@
 
   @media (min-width: $tablet-width) {
     flex-basis: 50%;
-    padding-top: 110px;
+    padding-top: 99px;
+    margin-bottom: 12px;
 
     &--ecology {
       order: 1;
@@ -161,4 +159,3 @@
     margin-right: 35px;
   }
 }
-

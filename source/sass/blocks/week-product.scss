@@ -1,17 +1,14 @@
 .week-product {
-  outline: 5px solid rgba(0, 255, 0, 0.3);
-  outline-offset: -5px;
-
   padding-top: 31px;
   padding-bottom: 42px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 40px;
+    padding-top: 36px;
     padding-bottom: 69px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 54px;
+    padding-top: 56px;
     padding-bottom: 96px;
   }
 
@@ -57,6 +54,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    grid-template-rows: max-content max-content max-content;
     position: relative;
     column-gap: 58px;
     padding-left: 175px;
@@ -87,7 +85,7 @@
 }
 
 .week-product__photo {
-  margin-bottom: 25px;
+  margin-bottom: 28px;
   width: 100%;
 
   @media (min-width: $tablet-width) {
@@ -103,7 +101,6 @@
 
   @media (min-width: $desktop-width) {
     grid-row: 1 / 5;
-    align-self: start;
     width: 525px;
     height: 636px;
     z-index: -1;
@@ -145,7 +142,7 @@
 
   @media (min-width: $tablet-width) {
     line-height: 17px;
-    margin-right: 20px;
+    margin-right: 27px;
     text-align: center;
   }
 
@@ -160,36 +157,36 @@
   font-size: 15px;
 
   margin: 0;
-  margin-bottom: 28px;
+  margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     font-size: 17px;
     line-height: 30px;
 
-    margin-bottom: 48px;
+    margin-bottom: 20px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 60px;
+    margin-bottom: 51px;
   }
 }
 
 .week-product__table {
   border-collapse: collapse;
-  margin-bottom: 28px;
+  margin-bottom: 30px;
 }
 
 .week-product__data {
   color: $color-basic-grey;
   border-bottom: 1px solid $color-light-grey;
 
-  height: 39px;
+  height: 37px;
 
   font-size: 15px;
   line-height: 20px;
 
   &:first-of-type {
-    width: 97px;
+    width: 96px;
   }
 }
 
@@ -205,10 +202,15 @@
 
   margin: 0;
   margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
 }
 
 .week-product__order {
-  padding: 16px 70px;
+  padding: 14px 70px;
   min-width: 260px;
   min-height: 52px;
 

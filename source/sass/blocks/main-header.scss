@@ -28,7 +28,7 @@
     background-image: url("../img/hero-desktop.jpg");
     padding-top: 155px;
     background-position: top;
-
+    background-position-y: -2px;
     min-height: 758px;
   }
 
@@ -48,7 +48,7 @@
     padding-left: 50px;
     padding-right: 50px;
 
-    min-height: 608px;
+    min-height: 601px;
   }
 
   @media (min-width: $desktop-width) {
