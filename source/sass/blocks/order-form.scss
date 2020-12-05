@@ -1,7 +1,3 @@
-.order-form {
-  outline: 5px solid rgba(0, 255, 0, 0.3);
-  outline-offset: -5px;
-}
 
 .order-form__wrapper {
   padding-left: 30px;
@@ -29,6 +25,7 @@
 .order-form__caption {
   font-size: 13px;
 
+  margin: 0;
   margin-bottom: 29px;
 
   @media (min-width: $desktop-width) {
@@ -42,10 +39,9 @@
   padding: 0;
   margin: 0;
   border: none;
+  position: relative;
 
-  @media (min-width: $tablet-width) {
-    position: relative;
-  }
+  margin-bottom: 43px;
 }
 
 .order-form__legend {
@@ -55,6 +51,20 @@
   font-weight: bold;
   line-height: 16px;
   text-transform: uppercase;
+
+  margin-bottom: 35px;
+
+  @media (max-width: $mobile-width-only) {
+    &::after {
+      position: absolute;
+      content: "";
+      width: calc(100% - 60px);
+      height: 1px;
+      top: 8px;
+      right: 0;
+      background-color: $color-basic-soft-green;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     position: absolute;
@@ -94,6 +104,13 @@
 
   @media (min-width: $desktop-width) {
     width: 86%;
+  }
+}
+
+.order-form__reminder {
+  @media (max-width: $mobile-width-only) {
+    display: block;
+    margin-bottom: 30px;
   }
 }
 

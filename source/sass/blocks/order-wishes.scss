@@ -1,7 +1,10 @@
 .order-wishes {
+  margin-bottom: 17px;
+
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 53px;
   }
 }
 
