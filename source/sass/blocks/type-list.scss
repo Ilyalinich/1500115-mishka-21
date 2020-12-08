@@ -3,14 +3,13 @@
   font-weight: bold;
   line-height: 18px;
   display: inline-block;
-  padding-left: 61px;
-  margin-bottom: 24px;
+  padding-left: 60px;
   position: relative;
 
   &::before {
     position: absolute;
     content: "";
-    top: calc(50% - 21px);
+    top: calc(50% - 22px);
     left: 0;
     width: 36px;
     height: 36px;
@@ -32,11 +31,11 @@
   &:checked + .type-list__label::after {
     position: absolute;
     content: "";
-    top: calc(50% - 11px);
-    left: 10px;
+    top: calc(50% - 10px);
+    left: 12px;
     width: 0;
     height: 0;
-    border: 10px solid $color-basic-soft-green;
+    border: 8px solid $color-basic-soft-green;
     border-radius: 50%;
   }
 }
