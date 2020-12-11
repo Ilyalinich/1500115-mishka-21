@@ -1,14 +1,18 @@
 .product-card {
-  outline: 5px solid rgba(47, 0, 255, 0.3);
-  outline-offset: -5px;
-
   @media (min-width: $tablet-width) {
     display: flex;
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: column;
-    max-width: 316px;
+  }
+
+  &:hover .product-card__info {
+    box-shadow: 0 6px 10px 0 rgba($color-basic-black, 0.1);
+  }
+
+  &:active .product-card__info {
+    box-shadow: 0 3px 5px 0 rgba($color-basic-black, 0.1);
   }
 }
 
@@ -16,12 +20,23 @@
   text-decoration: none;
   color: inherit;
 
+  &:hover,
+  &:focus {
+    color: rgba($color-basic-black, 0.6);
+  }
+
+  &:active {
+    color: rgba($color-basic-black, 0.3);
+  }
+}
+
+.product-card__photo {
   @media (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
     flex-basis: 50%;
   }
 }
 
-.product-card__photo {
+.product-card__img {
   display: block;
 
   width: 100%;
@@ -38,40 +53,90 @@
 }
 
 .product-card__info {
-  padding: 28px 28px 0;
+  padding: 28px 28px 26px;
   box-sizing: border-box;
 
+  outline: 1px solid $color-light-grey;
+  outline-offset: -1px;
+
   @media (min-width: $tablet-width) {
+    padding-left: 34px;
+    padding-right: 34px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    flex-basis: 50%;
+    width: 50%;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 28px;
+    padding-right: 28px;
+    width: auto;
+    flex-basis: 100%;
+  }
+}
+
+.product-card__description {
+  margin-bottom: 18px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 13px;
   }
 }
 
 .product-card__title {
   font-size: 17px;
   margin: 0;
+  margin-bottom: 5px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
 }
 
 .product-card__parameters {
   font-size: 13px;
   line-height: 30px;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 15px;
+  }
 }
 
 .product-card__price {
   display: flex;
-  align-items: center;
   justify-content: space-between;
 
-  font-size: 15px;
-
-  min-height: 73px;
+  padding-top: 23px;
   border-top: 1px solid $color-light-grey;
 }
+
+.product-card__price b {
+  font-size: 15px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+  }
+}
+
 
 .product-card__modal-link {
   width: 20px;
   height: 19px;
+
+  @media (min-width: $desktop-width) {
+    width: 24px;
+  }
+
+  &:hover path,
+  &:focus path {
+    fill: $color-basic-light-green;
+    opacity: 1;
+  }
+
+  &:active path {
+    fill: $color-basic-light-green;
+    opacity: 0.3;
+  }
 }
