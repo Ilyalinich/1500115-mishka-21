@@ -355,7 +355,7 @@
   display: block;
   width: 100%;
   min-height: 52px;
-  padding: 0;
+  padding: 17px 0 15px;
   box-sizing: border-box;
   border: none;
   border-bottom: 2px solid $color-basic-black;
@@ -368,7 +368,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 19px;
-    padding-left: 17px;
+    padding: 12px 17px 12px;
   }
 
   &:hover,
@@ -398,8 +398,10 @@
 
   &--large {
     border: 2px solid $color-basic-grey;
-    padding: 17px;
+    padding: 15px;
     min-height: 142px;
+    resize: none;
+    overflow: auto;
   }
 }
 
