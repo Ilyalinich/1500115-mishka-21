@@ -1,12 +1,22 @@
 .production-video {
   box-shadow: 0 0 0 1px $color-light-grey inset;
-  padding-bottom: 33px;
+
+  &:hover,
+  &:focus-within {
+    box-shadow:
+      0 0 0 1px $color-light-grey inset,
+      0 6px 10px 0 rgba($color-basic-black, 0.1);
+  }
+
+  &:active {
+    box-shadow:
+      0 0 0 1px $color-light-grey inset,
+      0 3px 5px 0 rgba($color-basic-black, 0.1);
+  }
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
-
-    padding-bottom: 46px;
   }
 
   @media (min-width: $desktop-width) {
@@ -15,22 +25,30 @@
     grid-template-rows: min-content 1fr;
 
     min-height: 455px;
-    padding-bottom: 0;
   }
 }
 
-.production-video__container {
-  padding-left: 34px;
-  padding-right: 33px;
+.production-video__header {
+  padding: 22px 33px 26px 34px;
 
   @media (min-width: $tablet-width) {
-    padding: 0 42px;
+    padding: 41px 42px 25px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 80px;
-    padding-right: 57px;
+    padding: 47px 57px 27px 80px;
+  }
+}
 
+.production-video__footer {
+  padding: 35px 33px 34px 34px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 42px 46px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 57px 60px 80px;
     display: flex;
     flex-direction: column;
   }
@@ -45,25 +63,17 @@
   line-height: 24px;
 
   margin: 0;
-  padding-top: 22px;
-  margin-bottom: 26px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
-
-    padding-top: 41px;
-    margin-bottom: 25px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 47px;
     flex-direction: column;
     align-items: flex-start;
-    margin-bottom: 27px;
   }
 
   &::before {
-    display: block;
     flex-shrink: 0;
     content: "";
     width: 32px;
@@ -73,10 +83,11 @@
 
     @media (min-width: $tablet-width) {
       margin-right: 33px;
+      margin-top: -6px;
     }
 
     @media (min-width: $desktop-width) {
-      margin-right: 0;
+      margin: 0;
       margin-bottom: 28px;
     }
   }
@@ -85,10 +96,6 @@
 .production-video__photo {
   display: block;
   width: 100%;
-
-  @media (max-width: $mobile-width-only) {
-    margin-bottom: 35px;
-  }
 
   @media (min-width: $tablet-width) {
     min-width: 668px;
@@ -117,13 +124,11 @@
 
 .make-order {
   padding: 17px 11px 15px;
-  min-width: 192px;
   min-height: 52px;
   line-height: 16px;
 
   @media (min-width: $desktop-width) {
     margin-top: auto;
-    margin-bottom: 60px;
 
     font-size: 17px;
   }
