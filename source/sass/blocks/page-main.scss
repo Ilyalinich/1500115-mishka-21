@@ -38,13 +38,16 @@
 }
 
 .page-main__catalog {
-  margin-bottom: 30px;
+  padding-top: 30px;
+  margin-bottom: 31px;
 
   @media (min-width: $tablet-width) {
+    padding-top: 65px;
     margin-bottom: 53px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 6px;
+    padding-top: 109px;
+    margin-bottom: 56px;
   }
 }
