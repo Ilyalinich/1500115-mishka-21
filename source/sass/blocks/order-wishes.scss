@@ -1,7 +1,10 @@
 .order-wishes {
+  margin-bottom: 17px;
+
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 53px;
   }
 }
 
@@ -12,6 +15,8 @@
   line-height: 16px;
 
   text-transform: uppercase;
+  margin-bottom: 22px;
+  display: block;
 }
 
 .order-wishes__input {
@@ -20,6 +25,7 @@
   padding: 0;
   padding-left: 10px;
   box-sizing: border-box;
+  border: 2px solid $color-basic-grey;
 
   min-height: 142px;
 

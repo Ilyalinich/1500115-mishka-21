@@ -15,9 +15,19 @@
 
 .contact-details-list__input {
   display: block;
+  width: 100%;
+  min-height: 52px;
   padding: 0;
   box-sizing: border-box;
-  width: 100%;
+  border: none;
+  border-bottom: 2px solid $color-basic-black;
+  margin-bottom: 22px;
+  background-color: transparent;
+
+  &:hover,
+  &:focus {
+    border-bottom: 2px solid $color-basic-soft-green;
+  }
 
   @media (min-width: $tablet-width) {
     width: 75%;
