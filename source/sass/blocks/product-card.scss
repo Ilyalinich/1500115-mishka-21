@@ -57,8 +57,8 @@
 
 .product-card__img {
   display: block;
-
   width: 100%;
+  background-color: $color-light-grey;
 
   @media (min-width: $tablet-width) {
     width: 334px;

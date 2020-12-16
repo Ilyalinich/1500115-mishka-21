@@ -25,6 +25,19 @@
     max-width: 1150px;
     margin: 0 auto;
   }
+
+  &--fix-width {
+    margin: 0 auto;
+    max-width: 320px;
+
+    @media (min-width: $tablet-width) {
+      max-width: 768px;
+    }
+
+    @media (min-width: $desktop-width) {
+      max-width: 1150px;
+    }
+  }
 }
 
 .page-main__container {
