@@ -93,19 +93,30 @@
   }
 }
 
-.production-video__photo {
-  display: block;
-  width: 100%;
-
+.production-video__video-container {
   @media (min-width: $tablet-width) {
-    min-width: 668px;
-    min-height: 455px;
-
     order: -1;
   }
 
   @media (min-width: $desktop-width) {
     grid-row: 1 / 3;
+  }
+}
+
+.production-video__img {
+  display: block;
+  min-width: 260px;
+  min-height: 150px;
+  width: 100%;
+
+  background-color: $color-light-grey;
+
+  @media (min-width: $tablet-width) {
+    min-width: 668px;
+    min-height: 455px;
+  }
+
+  @media (min-width: $desktop-width) {
     width: 683px;
     height: 455px;
   }
