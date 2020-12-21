@@ -4,7 +4,7 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 79px;
-    padding-bottom: 132px;
+    padding-bottom: 133px;
     background-image: url("../img/reviews-fone.jpg");
     background-repeat: no-repeat;
 
@@ -15,7 +15,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 186px;
+    padding-bottom: 185px;
   }
 
   &::after {
@@ -66,7 +66,7 @@
   line-height: 30px;
 
   margin: 0;
-  margin-bottom: 14px;
+  margin-bottom: 13px;
 
   @media (min-width: $tablet-width) {
     order: -2;
@@ -76,6 +76,7 @@
     font-size: 43px;
     line-height: 50px;
 
+    padding-top: 4px;
     margin-bottom: 39px;
   }
 
@@ -83,13 +84,14 @@
     font-size: 53px;
     line-height: 57px;
 
+    padding: 0;
     margin-bottom: 35px;
   }
 }
 
 .reviews__item {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 29px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
@@ -101,13 +103,13 @@
   line-height: 30px;
 
   margin: 0;
-  margin-bottom: 33px;
+  margin-bottom: 34px;
 
   @media (min-width: $tablet-width) {
     font-size: 17px;
     line-height: 30px;
 
-    margin-bottom: 61px;
+    margin-bottom: 60px;
   }
 
   @media (min-width: $desktop-width) {
@@ -116,8 +118,10 @@
 }
 
 .reviews__autor-name {
+  display: block;
   font-weight: bold;
   font-style: normal;
+  margin-bottom: 3px;
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
@@ -141,12 +145,13 @@
   @media (min-width: $tablet-width) {
     position: absolute;
     right: 69px;
-    bottom: 10px;
+    bottom: 11px;
     margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
     right: 19px;
+    bottom: 13px;
   }
 }
 
@@ -158,12 +163,12 @@
   padding: 0;
   cursor: pointer;
 
-  &:hover path,
-  &:focus path {
+  &:hover .reviews__toggle-icon,
+  &:focus .reviews__toggle-icon {
     opacity: 0.6;
   }
 
-  &:active path {
+  &:active .reviews__toggle-icon {
     opacity: 0.3;
   }
 
@@ -177,8 +182,13 @@
   border-right: none;
 
   @media (min-width: $tablet-width) {
-    margin-right: 37px;
+    margin-right: 42px;
   }
+}
+
+.reviews__toggle-icon {
+  margin-left: -5px;
+  margin-top: 3px;
 }
 
 .reviews__write {

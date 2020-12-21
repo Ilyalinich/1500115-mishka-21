@@ -5,10 +5,6 @@
     justify-content: space-between;
     align-items: center;
   }
-
-  @media (min-width: $desktop-width) {
-    position: relative;
-  }
 }
 
 .main-nav__list {
@@ -24,14 +20,16 @@
   &:first-of-type {
     @media (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
       position: absolute;
-      bottom: -46px;
+      bottom: -45px;
+      z-index: 99;
     }
   }
 
   &:last-of-type {
     @media (min-width: $desktop-width) {
       position: absolute;
-      bottom: -46px;
+      bottom: -45px;
+      z-index: 99;
     }
   }
 }
@@ -109,24 +107,16 @@
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    left: calc(50% - 75px);
-  }
-}
-
-.main-nav__img {
-  width: 86px;
-  height: 35px;
-  display: block;
-
-  @media (min-width: $tablet-width) {
-    width: 113px;
-    height: 46px;
-    margin: 0;
+    left: calc(50% - 73px);
   }
 
-  @media (min-width: $desktop-width) {
-    width: 149px;
-    height: 72px;
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
@@ -144,8 +134,9 @@
     padding: 0 30px;
   }
 
-  @media (min-width: $tablet-width) {
-    &--search {
+
+  &--search {
+    @media (min-width: $tablet-width) {
       width: 82px;
 
       .main-nav__text {
@@ -153,10 +144,18 @@
         opacity: 0;
       }
     }
+  }
 
-    &--basket {
-      width: 264px;
+  &--basket {
+    @media (min-width: $tablet-width) {
+      width: 265px;
       justify-content: flex-end;
+      box-sizing: border-box;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 267px;
+      padding-right: 2px;
     }
   }
 
@@ -169,21 +168,22 @@
     color: rgba($color-basic-black, 0.3);
   }
 
-  &:hover path,
-  &:focus path {
+  &:hover .main-nav__icon,
+  &:focus .main-nav__icon {
     fill: $color-basic-light-green;
     opacity: 1;
   }
 
-  &:active path {
+  &:active .main-nav__icon {
     opacity: 0.3;
   }
 }
 
 .main-nav__icon {
   position: absolute;
-  left: 30px;
+  left: 31px;
   top: calc(50% - 9px);
+  opacity: 0.2;
 }
 
 .main-nav__text {
