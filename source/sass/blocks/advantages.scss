@@ -4,12 +4,12 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 56px;
-    padding-bottom: 69px;
+    padding-bottom: 56px;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 68px;
-    padding-bottom: 73px;
+    padding-bottom: 63px;
   }
 }
 
@@ -35,11 +35,13 @@
   @media (min-width: $tablet-width) {
     font-size: 43px;
     line-height: 50px;
+    margin-bottom: 15px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 53px;
     line-height: 57px;
+    margin-bottom: 13px;
   }
 }
 
@@ -54,72 +56,46 @@
   }
 }
 
+.advantages__icon {
+  position: absolute;
+}
+
 .advantages__item {
   padding-top: 83px;
+  position: relative;
 
-  &--ecology .advantages__text::before {
-    position: absolute;
-    content: "";
-    top: -54px;
+  &--ecology .advantages__icon {
+    top: 28px;
     left: 8px;
-    width: 33px;
-    height: 38px;
-    background-image: url("../img/ecology-icon.svg");
   }
 
-  &--money .advantages__text::before {
-    position: absolute;
-    content: "";
-    top: -53px;
-    width: 47px;
-    height: 27px;
-    background-image: url("../img/money-icon.svg");
+  &--money .advantages__icon {
+    top: 29px;
   }
 
-  &--likes .advantages__text::before {
-    position: absolute;
-    content: "";
-    top: -48px;
+  &--likes .advantages__icon {
+    top: 34px;
     left: 7px;
-    width: 34px;
-    height: 27px;
-    background-image: url("../img/likes-icon.svg");
   }
 
-  &--hand-made .advantages__text::before {
-    position: absolute;
-    content: "";
-    top: -51px;
+  &--hand-made .advantages__icon {
+    top: 31px;
     left: 3px;
-    width: 35px;
-    height: 34px;
-    background-image: url("../img/hand-made-icon.svg");
   }
 
-  &--support .advantages__text::before {
-    position: absolute;
-    content: "";
-    top: -49px;
+  &--support .advantages__icon {
+    top: 32px;
     left: -6px;
-    width: 55px;
-    height: 23px;
-    background-image: url("../img/support-icon.svg");
   }
 
-  &--delivery .advantages__text::before {
-    position: absolute;
-    content: "";
-    top: -52px;
+  &--delivery .advantages__icon {
+    top: 30px;
     left: 3px;
-    width: 33px;
-    height: 32px;
-    background-image: url("../img/delivery-icon.svg");
   }
 
   @media (min-width: $tablet-width) {
     flex-basis: 50%;
-    padding-top: 99px;
-    margin-bottom: 12px;
+    margin-bottom: 27px;
 
     &--ecology {
       order: 1;

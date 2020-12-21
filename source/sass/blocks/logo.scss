@@ -1,3 +1,49 @@
 .logo {
-  list-style: none;
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    width: 114px;
+    height: 46px;
+    margin: 2px 0 0 -2px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 149px;
+    height: 72px;
+  }
+}
+
+.logo__text {
+  color: $color-basic-black;
+
+  @media (min-width: $tablet-width) {
+    color: $color-basic-white;
+    transform: scale(0.85) translate(9px, 5px);
+  }
+
+  @media (min-width: $desktop-width) {
+    transform: scale(0.69) translate(36px, 26px);
+  }
+}
+
+.logo__mobile-vector {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.logo__tablet-vector {
+  display: none;
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
+    display: block;
+  }
+}
+
+.logo__desktop-vector {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
 }

@@ -6,9 +6,23 @@
   font-size: 19px;
   line-height: 18px;
 
-  width: 183px;
+  width: 182px;
+  padding: 0 0 2px;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  &:hover .copyright__logo,
+  &:focus .copyright__logo {
+    color: $color-basic-hard-green;
+  }
+
+  &:active .copyright__logo {
+    color: rgba($color-basic-hard-green, 0.3);
+  }
+}
+
+.copyright__logo {
+  color: $color-basic-light-green;
 }

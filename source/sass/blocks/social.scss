@@ -6,12 +6,41 @@
   justify-self: center;
 
   list-style: none;
-  padding: 0;
+  padding: 0 0 3px;
   margin: 0;
 
   width: 142px;
+
+  @media (min-width: $tablet-width) {
+    padding: 3px 0 0;
+  }
 }
 
-.social__link img {
+.social__link {
   display: block;
+  color: $color-basic-black;
+
+  &:hover .social__link-icon,
+  &:focus .social__link-icon {
+    color: $color-basic-hard-green;
+  }
+
+  &:active .social__link-icon {
+    color: rgba($color-basic-hard-green, 0.3);
+  }
+
+  &--instagram {
+    width: 22px;
+    height: 22px;
+  }
+
+  &--facebook {
+    width: 15px;
+    height: 28px;
+  }
+
+  &--twitter {
+    width: 23px;
+    height: 20px;
+  }
 }
