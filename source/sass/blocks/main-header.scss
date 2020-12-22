@@ -7,7 +7,7 @@
 
   @media (min-width: $tablet-width) {
     position: relative;
-    min-height: 238px;
+    min-height: 237px;
     padding-top: 101px;
 
     &::after {
@@ -22,7 +22,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    min-height: 272px;
+    min-height: 271px;
     padding-top: 102px;
 
     &::after {
