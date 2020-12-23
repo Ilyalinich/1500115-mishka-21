@@ -59,6 +59,7 @@
   display: block;
   width: 100%;
   background-color: $color-light-grey;
+  min-height: 195px;
 
   @media (min-width: $tablet-width) {
     width: 334px;
@@ -72,15 +73,15 @@
 }
 
 .product-card__info {
-  padding: 28px 28px 26px;
+  padding: 28px 27px 26px 28px;
   box-sizing: border-box;
 
   outline: 1px solid $color-light-grey;
   outline-offset: -1px;
 
   @media (min-width: $tablet-width) {
-    padding-left: 34px;
-    padding-right: 34px;
+    padding-right: 32px;
+    padding-left: 33px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -88,8 +89,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 28px;
-    padding-right: 28px;
+    padding: 28px 28px 25px 28px;
     width: auto;
     flex-basis: 100%;
   }
@@ -126,6 +126,7 @@
 .product-card__price {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
 
   padding-top: 23px;
   border-top: 1px solid $color-light-grey;
@@ -143,19 +144,18 @@
 .product-card__modal-link {
   width: 20px;
   height: 19px;
+  fill: rgba($color-basic-black, 0.2);
 
   @media (min-width: $desktop-width) {
     width: 24px;
   }
 
-  &:hover path,
-  &:focus path {
-    fill: $color-basic-light-green;
-    opacity: 1;
+  &:hover,
+  &:focus {
+    fill: rgba($color-basic-light-green, 1);
   }
 
-  &:active path {
-    fill: $color-basic-light-green;
-    opacity: 0.3;
+  &:active {
+    fill: rgba($color-basic-light-green, 0.3);
   }
 }
