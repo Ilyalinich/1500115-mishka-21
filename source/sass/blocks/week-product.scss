@@ -53,7 +53,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-rows: max-content max-content max-content;
+    grid-template-rows: auto auto 1fr;
     position: relative;
     column-gap: 58px;
     padding-left: 175px;
@@ -194,6 +194,11 @@
 .week-product__table {
   border-collapse: collapse;
   margin-bottom: 28px;
+  display: block;
+}
+
+.week-product__table tbody {
+  display: block;
 }
 
 .week-product__row {

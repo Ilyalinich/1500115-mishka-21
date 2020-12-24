@@ -109,7 +109,7 @@
                 </div>
                 <div class="product-card__price">
                   <b>1 200 руб.</b>
-                  <a class="product-card__modal-link" href="modal.html" aria-label="Добавить товар в корзину">
+                  <a class="product-card__modal-link modal-link" href="modal.html" aria-label="Добавить товар в корзину">
                     <svg aria-hidden="true" focusable="false" width="20" height="19">
                       <use xlink:href="img/svg-sprite.svg#basket-icon"></use>
                     </svg>
@@ -135,7 +135,7 @@
                 </div>
                 <div class="product-card__price">
                   <b>690 руб.</b>
-                  <a class="product-card__modal-link" href="modal.html" aria-label="Добавить товар в корзину">
+                  <a class="product-card__modal-link modal-link" href="modal.html" aria-label="Добавить товар в корзину">
                     <svg aria-hidden="true" focusable="false" width="20" height="19">
                       <use xlink:href="img/svg-sprite.svg#basket-icon"></use>
                     </svg>
@@ -161,7 +161,7 @@
                 </div>
                 <div class="product-card__price">
                   <b>1 500 руб.</b>
-                  <a class="product-card__modal-link" href="modal.html" aria-label="Добавить товар в корзину">
+                  <a class="product-card__modal-link modal-link" href="modal.html" aria-label="Добавить товар в корзину">
                     <svg aria-hidden="true" focusable="false" width="20" height="19">
                       <use xlink:href="img/svg-sprite.svg#basket-icon"></use>
                     </svg>
@@ -246,22 +246,37 @@
       </div>
     </footer>
 
-    <script>
-      var navMain = document.querySelector('.main-nav');
-      var navToggle = document.querySelector('.main-nav__toggle');
+    <section class="modal">
+      <div class="modal__wrapper">
+        <h2 class="modal__title">Добавить в&nbsp;корзину</h2>
+        <form class="modal__form" method="get" action="https://echo.htmlacademy.ru">
+          <fieldset class="modal__fieldset">
+            <legend class="modal__legend">Выберите размер:</legend>
+            <ul class="modal__list">
+              <li class="modal__item">
+                <input class="modal__input visually-hidden" type="radio" name="size" id="s-size" value="S" checked>
+                <label class="modal__label" for="s-size">S</label>
+              </li>
+              <li class="modal__item">
+                <input class="modal__input visually-hidden" type="radio" name="size" id="m-size" value="M">
+                <label class="modal__label" for="m-size">M</label>
+              </li>
+              <li class="modal__item">
+                <input class="modal__input visually-hidden" type="radio" name="size" id="l-size" value="L">
+                <label class="modal__label" for="l-size">L</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="modal__add-product button" type="submit" name="add-product">Добавить</button>
+        </form>
+      </div>
+    </section>
 
-      navMain.classList.remove('main-nav--nojs');
+    <div class="disable-layout"></div>
 
-      navToggle.addEventListener('click', function() {
-        if (navMain.classList.contains('main-nav--closed')) {
-          navMain.classList.remove('main-nav--closed');
-          navMain.classList.add('main-nav--opened');
-        } else {
-          navMain.classList.add('main-nav--closed');
-          navMain.classList.remove('main-nav--opened');
-        }
-      });
-    </script>
+    <script src="js/main-nav.js"></script>
+
+    <script src="js/modal-popup.js"></script>
 
   </body>
 </html>

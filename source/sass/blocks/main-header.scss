@@ -58,6 +58,11 @@
   @media (min-width: $desktop-width) {
     padding-top: 157px;
     min-height: 762px;
+    overflow: hidden;
+
+    &::after {
+      transform: scaleX(1.087);
+    }
   }
 }
 
