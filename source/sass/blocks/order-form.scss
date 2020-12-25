@@ -376,7 +376,7 @@
 .order-form__input {
   display: block;
   width: 100%;
-  min-height: 52px;
+  height: 52px;
   padding: 17px 0 15px;
   box-sizing: border-box;
   border: none;
@@ -422,6 +422,7 @@
     min-height: 142px;
     resize: none;
     overflow: auto;
+    margin: 0;
   }
 }
 
@@ -495,7 +496,7 @@
 }
 
 .order-form__submit {
-  padding: 18px 15px 14px;
+  padding: 17px 15px 15px;
   min-width: 230px;
   width: 100%;
   min-height: 52px;

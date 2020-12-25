@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body class="page__body">
+  <body class="page__body page__body--disable">
 
     <svg style="display: none;">
       <symbol viewBox="0 0 86 29" preserveAspectRatio="xMidYMin" id="logo-text">
@@ -149,7 +149,7 @@
             </div>
             <div class="week-product__footer">
               <p class="week-product__price">Цена: 990 руб.</p>
-              <a class="week-product__order button" href="#">Заказать</a>
+              <a class="week-product__order button modal-link" href="modal.html">Заказать</a>
             </div>
           </div>
         </section>
@@ -315,22 +315,38 @@
       </div>
     </footer>
 
-    <script>
-      var navMain = document.querySelector('.main-nav');
-      var navToggle = document.querySelector('.main-nav__toggle');
 
-      navMain.classList.remove('main-nav--nojs');
+    <section class="modal">
+      <div class="modal__wrapper">
+        <h2 class="modal__title">Добавить в&nbsp;корзину</h2>
+        <form class="modal__form" method="get" action="https://echo.htmlacademy.ru">
+          <fieldset class="modal__fieldset">
+            <legend class="modal__legend">Выберите размер:</legend>
+            <ul class="modal__list">
+              <li class="modal__item">
+                <input class="modal__input visually-hidden" type="radio" name="size" id="s-size" value="S" checked>
+                <label class="modal__label" for="s-size">S</label>
+              </li>
+              <li class="modal__item">
+                <input class="modal__input visually-hidden" type="radio" name="size" id="m-size" value="M">
+                <label class="modal__label" for="m-size">M</label>
+              </li>
+              <li class="modal__item">
+                <input class="modal__input visually-hidden" type="radio" name="size" id="l-size" value="L">
+                <label class="modal__label" for="l-size">L</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="modal__add-product button" type="submit" name="add-product">Добавить</button>
+        </form>
+      </div>
+    </section>
 
-      navToggle.addEventListener('click', function() {
-        if (navMain.classList.contains('main-nav--closed')) {
-          navMain.classList.remove('main-nav--closed');
-          navMain.classList.add('main-nav--opened');
-        } else {
-          navMain.classList.add('main-nav--closed');
-          navMain.classList.remove('main-nav--opened');
-        }
-      });
-    </script>
+    <div class="disable-layout"></div>
+
+    <script src="js/main-nav.js"></script>
+
+    <script src="js/modal-popup.js"></script>
 
   </body>
 </html>

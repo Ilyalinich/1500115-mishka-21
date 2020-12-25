@@ -1,0 +1,12 @@
+.disable-layout {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba($color-basic-white, 0.9);
+
+  &--active {
+    display: block;
+    z-index: 99;
+  }
+}

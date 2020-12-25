@@ -1,0 +1,134 @@
+.modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  min-height: 336px;
+  min-width: 320px;
+  width: 566px;
+  max-width: 100%;
+  padding: 29px 30px 46px;
+  box-sizing: border-box;
+
+  text-align: center;
+
+  border: 1px solid $color-hard-grey;
+  box-shadow: 0 5px 10px 0 rgba($color-soft-black, 0.25);
+
+  background-color: $color-basic-white;
+
+  &--opened {
+    display: block;
+    z-index: 100;
+  }
+}
+
+.modal__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 260px;
+  max-width: 350px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 57px;
+  }
+}
+
+.modal__title {
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 14px;
+
+  font-size: 25px;
+  line-height: 30px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 57px;
+    margin-right: -2px;
+    margin-left: -2px;
+    margin-bottom: 11px;
+  }
+}
+
+.modal__fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.modal__legend {
+  padding: 0;
+  margin: 0 auto 21px;
+  font-size: 15px;
+  line-height: 30px;
+  color: $color-basic-grey;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    margin-bottom: 19px;
+  }
+}
+
+.modal__list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 31px;
+}
+
+.modal__item {
+  flex: 1 0 82px;
+  margin-right: 7px;
+
+  &:last-child {
+    margin: 0;
+  }
+}
+
+.modal__input {
+  &:hover + .modal__label {
+    border-color: rgba($color-basic-grey, 0.3);
+  }
+
+  &:active + .modal__label,
+  &:checked + .modal__label {
+    border-color: rgba($color-basic-soft-green, 1);
+  }
+}
+
+.modal__label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  height: 52px;
+  border: 2px solid rgba($color-basic-grey, 0.1);
+
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: bold;
+  color: $color-basic-grey;
+}
+
+.modal__add-product {
+  min-height: 52px;
+  width: 100%;
+  font-size: 17px;
+  line-height: 16px;
+  background-color: $color-basic-light-green;
+  color: $color-basic-white;
+  border: none;
+  padding: 18px;
+
+  &:hover,
+  &:focus {
+    background: linear-gradient(0deg, $color-basic-hard-green, $color-basic-hard-green);
+  }
+}
