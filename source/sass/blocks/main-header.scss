@@ -32,7 +32,7 @@
   }
 }
 
-.main-header--index-page {
+.main-header--promo {
   background-image: url("../img/hero-mobile.jpg");
   background-repeat: no-repeat;
   background-position: center -18px;
@@ -95,7 +95,6 @@
   margin-bottom: 73px;
 
   font-size: 27px;
-  font-weight: bold;
   line-height: 30px;
   text-align: center;
 
@@ -110,6 +109,10 @@
     font-size: 53px;
     line-height: 57px;
     margin-bottom: 113px;
+
+    span {
+      display: none;
+    }
   }
 }
 

@@ -390,7 +390,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 19px;
-    padding: 12px 17px 12px;
+    padding: 16px 17px 16px;
   }
 
   &:hover,
@@ -407,7 +407,7 @@
   &::placeholder {
     font-family: "Open sans", "Arial", sans-serif;
     font-size: 17px;
-    line-height: 18px;
+    line-height: inherit;
     color: rgba($color-basic-black, 0.3);
     white-space: pre-line;
 
