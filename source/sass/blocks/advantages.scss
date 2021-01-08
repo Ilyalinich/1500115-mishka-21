@@ -15,13 +15,21 @@
 
 .advantages__wrapper {
   padding: 0 30px;
+  margin: 0 auto;
+  max-width: 260px;
+
+  @media (min-width: 620px) {
+    padding: 0 50px;
+    max-width: 520px;
+  }
 
   @media (min-width: $tablet-width) {
-    padding: 0 50px;
+    max-width: 668px;
   }
 
   @media (min-width: $desktop-width) {
     padding: 0 175px;
+    max-width: 1052px;
   }
 }
 
@@ -50,7 +58,7 @@
   padding: 0;
   margin: 0;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: 620px) {
     display: flex;
     flex-wrap: wrap;
   }
@@ -93,7 +101,7 @@
     left: 3px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: 620px) {
     flex-basis: 50%;
     margin-bottom: 27px;
 
