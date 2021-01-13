@@ -2,7 +2,7 @@
 .product-category-list {
   @media (min-width: $tablet-width) {
     display: flex;
-    align-items: flex-end;
+    flex-wrap: wrap;
   }
 }
 
@@ -11,6 +11,7 @@
 
   @media (min-width: $tablet-width) {
     flex-basis: 50%;
+    flex-grow: 1;
   }
 }
 

@@ -1,7 +1,18 @@
+.user-list {
+  @media (min-width: $tablet-width) {
+    max-width: 404px;
+  }
+}
+
+.user-list__item {
+  @media (min-width: $tablet-width) {
+    border-left: 1px solid rgba($color-basic-black, 0.1);
+  }
+}
 
 .user-list__link {
   @media (min-width: $tablet-width) {
+    padding: 33px 0 31px 82px;
     min-height: 88px;
-    border-left: 1px solid rgba($color-basic-black, 0.1);
   }
 }

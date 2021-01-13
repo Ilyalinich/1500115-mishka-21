@@ -85,20 +85,21 @@
 
 .production-video__img {
   display: block;
-  min-width: 260px;
-  min-height: 150px;
-  width: 100%;
+  width: 260px;
+  height: 150px;
+  object-fit: cover;
 
   background-color: $color-light-grey;
 
   @media (min-width: $tablet-width) {
-    min-width: 668px;
-    min-height: 455px;
+    width: 668px;
+    height: 455px;
   }
 
   @media (min-width: $desktop-width) {
     width: 683px;
-    height: 455px;
+    height: 100%;
+    object-fit: contain;
   }
 }
 
@@ -153,9 +154,8 @@
   }
 }
 
-.make-order {
+.production-video__make-order {
   padding: 17px 11px 15px;
-  min-height: 52px;
   line-height: 16px;
 
   @media (min-width: $tablet-width) {

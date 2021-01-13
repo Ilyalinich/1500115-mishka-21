@@ -49,21 +49,16 @@
   }
 }
 
-.product-card__photo {
-  @media (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
-    flex-basis: 50%;
-  }
-}
-
 .product-card__img {
   display: block;
-  width: 100%;
   background-color: $color-light-grey;
-  min-height: 195px;
+  width: 260px;
+  height: 195px;
+  object-fit: cover;
 
   @media (min-width: $tablet-width) {
     width: 334px;
-    height: 334px;
+    height: 100%;
   }
 
   @media (min-width: $desktop-width) {
@@ -91,7 +86,7 @@
   @media (min-width: $desktop-width) {
     padding: 28px 28px 25px 28px;
     width: auto;
-    flex-basis: 100%;
+    flex-grow: 1;
   }
 }
 
