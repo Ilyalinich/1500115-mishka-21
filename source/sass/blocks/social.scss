@@ -2,7 +2,6 @@
 .social__list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   align-items: center;
 
   list-style: none;
@@ -13,6 +12,19 @@
 
   @media (min-width: $tablet-width) {
     padding: 3px 0 0;
+  }
+}
+
+.social__item {
+  display: flex;
+  flex-basis: 33.3%;
+
+  &:nth-child(3n-1) {
+    justify-content: center;
+  }
+
+  &:nth-child(3n) {
+    justify-content: flex-end;
   }
 }
 

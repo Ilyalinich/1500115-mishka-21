@@ -2,8 +2,16 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Мишка</title>
+    <meta name="description" content="Магазин товаров для дома ручной работы">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HTML Academy: Мишка</title>
+    <link rel="preload" href="img/hero-mobile.jpg" as="image" media="(max-width: 767px) and (resolution: 1dppx)">
+    <link rel="preload" href="img/hero-tablet.jpg" as="image" media="(min-width: 768px) and (resolution: 1dppx)">
+    <link rel="preload" href="img/hero-mobile@2x.jpg" as="image" media="(max-width: 767px) and (min-resolution: 2dppx)">
+    <link rel="preload" href="img/hero-tablet@2x.jpg" as="image" media="(min-width: 768px) and (min-resolution: 2dppx)">
+    <link rel="preload" href="fonts/opensans.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="js/main-page-script.min.js" as="script">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page__body">
@@ -27,7 +35,7 @@
     <header class="page-header">
       <div class="page-header__wrapper">
         <nav class="main-nav main-nav--closed main-nav--nojs">
-          <a class="main-nav__logo">
+          <a class="main-nav__logo" href="#">
             <svg class="logo" role="img" width="86" height="35" aria-label="Логотип магазина «Мишка»">
               <use class="logo__desktop-vector" xlink:href="#logo-desktop-vector"></use>
               <use class="logo__tablet-vector" xlink:href="#logo-tablet-vector"></use>
@@ -316,7 +324,7 @@
           </div>
           <div class="contacts__map">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002735!2d30.32085871559023!3d59.938719169054785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1608049303318!5m2!1sru!2sru"
-              width="320" height="454" allowfullscreen="" aria-hidden="false" tabindex="0">
+              width="320" height="454" allowfullscreen="" aria-hidden="false" tabindex="0" loading="lazy" title="Местоположение магазина на карте">
             </iframe>
           </div>
           <div class="contacts__wrapper">
@@ -401,11 +409,7 @@
 
     <div class="disable-layout"></div>
 
-    <script src="js/main-nav.min.js"></script>
-
-    <script src="js/modal-popup.min.js"></script>
-
-    <script src="js/slider.min.js"></script>
+    <script src="js/main-page-script.min.js"></script>
 
   </body>
 </html>

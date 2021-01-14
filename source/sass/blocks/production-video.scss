@@ -87,7 +87,6 @@
   display: block;
   width: 260px;
   height: 150px;
-  object-fit: cover;
 
   background-color: $color-light-grey;
 
@@ -98,8 +97,6 @@
 
   @media (min-width: $desktop-width) {
     width: 683px;
-    height: 100%;
-    object-fit: contain;
   }
 }
 

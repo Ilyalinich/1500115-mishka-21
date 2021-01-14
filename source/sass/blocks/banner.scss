@@ -29,7 +29,7 @@
   &--inner-page {
     background-color: $color-soft-grey;
     min-height: 176px;
-    padding-bottom: 73px;
+    padding-bottom: 74px;
 
     @media (min-width: $tablet-width) {
       min-height: 237px;
@@ -86,7 +86,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 1150px;
+    max-width: 1050px;
     margin: 0 auto;
   }
 }
@@ -108,6 +108,10 @@
   @media (min-width: $desktop-width) {
     font-size: 53px;
     line-height: 57px;
+
+    span {
+      display: none;
+    }
   }
 }
 
@@ -122,10 +126,6 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 204px;
-
-    span {
-      display: none;
-    }
   }
 }
 
