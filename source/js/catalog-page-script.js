@@ -1,3 +1,21 @@
+/*main-nav.js*/
+
+var navMain = document.querySelector('.main-nav');
+var navToggle = document.querySelector('.main-nav__toggle');
+
+navMain.classList.remove('main-nav--nojs');
+
+navToggle.addEventListener('click', function() {
+  if (navMain.classList.contains('main-nav--closed')) {
+    navMain.classList.remove('main-nav--closed');
+    navMain.classList.add('main-nav--opened');
+  } else {
+    navMain.classList.add('main-nav--closed');
+    navMain.classList.remove('main-nav--opened');
+  }
+});
+
+/*modal-popup.js*/
 
 var modalLinks_massive = document.querySelectorAll('.modal-link');
 var modalPopup = document.querySelector('.modal');

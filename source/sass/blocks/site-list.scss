@@ -4,6 +4,10 @@
 
     width: calc(100% - 400px);
   }
+
+  @media (min-width: $desktop-width) {
+    max-width: 404px;
+  }
 }
 
 .site-list__item {
@@ -29,5 +33,7 @@
 .site-list__link {
   @media (min-width: $desktop-width) {
     min-height: 88px;
+    padding-top: 33px;
+    padding-bottom: 31px;
   }
 }

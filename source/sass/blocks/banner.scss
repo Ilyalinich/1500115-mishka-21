@@ -1,0 +1,136 @@
+
+.banner {
+  padding-top: 72px;
+  box-sizing: border-box;
+  border-top: 1px solid $color-light-grey;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    border-top: 1px solid rgba($color-basic-black, 0.1);
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 24px;
+      background-image: url("../img/zigzag-fill-tablet.svg");
+      background-position-x: center;
+      bottom: 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      height: 34px;
+      background-image: url("../img/zigzag-fill-desktop.svg");
+    }
+  }
+
+  &--inner-page {
+    background-color: $color-soft-grey;
+    min-height: 176px;
+    padding-bottom: 74px;
+
+    @media (min-width: $tablet-width) {
+      min-height: 237px;
+      padding-top: 101px;
+      padding-bottom: 86px;
+    }
+
+    @media (min-width: $desktop-width) {
+      min-height: 271px;
+      padding-top: 102px;
+      padding-bottom: 112px;
+    }
+  }
+
+  &--main {
+    background-image: url("../img/hero-mobile.jpg");
+    background-repeat: no-repeat;
+    background-position: center -18px;
+    background-color: $color-normal-grey;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/hero-mobile@2x.jpg");
+      background-size: 320px auto;
+    }
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../img/hero-tablet.jpg");
+      padding-top: 155px;
+      background-position-y: -1px;
+      min-height: 757px;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/hero-tablet@2x.jpg");
+        background-size: 768px auto;
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 157px;
+      min-height: 762px;
+      overflow: hidden;
+
+      &::after {
+        transform: scaleX(1.087);
+      }
+    }
+  }
+}
+
+.banner__wrapper {
+  @media (min-width: $tablet-width) {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1050px;
+    margin: 0 auto;
+  }
+}
+
+.banner__title {
+  padding: 0 30px;
+  margin: 0;
+
+  font-size: 27px;
+  line-height: 30px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 50px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+
+    span {
+      display: none;
+    }
+  }
+}
+
+.banner--main .banner__title {
+  min-height: 90px;
+  margin-bottom: 120px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 265px;
+    margin-bottom: 206px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 204px;
+  }
+}
+
+.banner__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}

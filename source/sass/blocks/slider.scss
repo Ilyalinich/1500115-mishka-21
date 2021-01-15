@@ -1,4 +1,19 @@
-//.slider
-.slider__item--closed {
+.slider__item {
   display: none;
+}
+
+.slider__item--shown {
+  display: block;
+
+  animation: open 1s;
+}
+
+@keyframes open {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }

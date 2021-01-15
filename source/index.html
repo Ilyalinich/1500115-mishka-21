@@ -2,11 +2,19 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Мишка</title>
+    <meta name="description" content="Магазин товаров для дома ручной работы">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HTML Academy: Мишка</title>
+    <link rel="preload" href="img/hero-mobile.jpg" as="image" media="(max-width: 767px) and (resolution: 1dppx)">
+    <link rel="preload" href="img/hero-tablet.jpg" as="image" media="(min-width: 768px) and (resolution: 1dppx)">
+    <link rel="preload" href="img/hero-mobile@2x.jpg" as="image" media="(max-width: 767px) and (min-resolution: 2dppx)">
+    <link rel="preload" href="img/hero-tablet@2x.jpg" as="image" media="(min-width: 768px) and (min-resolution: 2dppx)">
+    <link rel="preload" href="fonts/opensans.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="js/main-page-script.min.js" as="script">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
-  <body class="page__body page__body--disable">
+  <body class="page__body">
 
     <svg style="display: none;">
       <symbol viewBox="0 0 86 29" preserveAspectRatio="xMidYMin" id="logo-text">
@@ -26,8 +34,8 @@
 
     <header class="page-header">
       <div class="page-header__wrapper">
-        <nav class="page-header__nav main-nav main-nav--closed main-nav--nojs">
-          <a class="main-nav__logo">
+        <nav class="main-nav main-nav--closed main-nav--nojs">
+          <a class="main-nav__logo" href="#">
             <svg class="logo" role="img" width="86" height="35" aria-label="Логотип магазина «Мишка»">
               <use class="logo__desktop-vector" xlink:href="#logo-desktop-vector"></use>
               <use class="logo__tablet-vector" xlink:href="#logo-tablet-vector"></use>
@@ -85,14 +93,14 @@
 
     <main class="page-main">
 
-      <section class="main-header main-header--promo">
-        <div class="main-header__wrapper">
-          <h1 class="main-header__title">
+      <section class="banner banner--main">
+        <div class="banner__wrapper">
+          <h1 class="banner__title">
             Милые штуки ручной<span>&nbsp;</span><br>
             работы для дома
           </h1>
-          <nav class="main-header__nav">
-            <ul class="main-header__list product-category-list">
+          <nav class="banner__nav">
+            <ul class="banner__list product-category-list">
               <li class="product-category-list__item">
                 <a class="product-category-list__link product-category-list__link--interior" href="#">
                   Предметы<br>
@@ -158,12 +166,10 @@
                 <img class="week-product__img" src="img/triple-set-mobile.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" width="260" height="315" alt="Набор из трех вязаных корзинок разного объема, серо-зеленого и бело-розового цвета">
               </picture>
             </div>
-            <div class="week-product__footer">
-              <p class="week-product__price">
-                Цена: 990 руб.
-              </p>
-              <a class="week-product__order button modal-link" href="modal.html">Заказать</a>
-            </div>
+            <p class="week-product__price">
+              Цена: 990 руб.
+            </p>
+            <a class="week-product__order button modal-link" href="modal.html">Заказать</a>
           </div>
         </section>
 
@@ -234,8 +240,8 @@
         <section class="reviews">
           <div class="reviews__wrapper slider">
             <h2 class="reviews__title">Отзывы</h2>
-            <div class="reviews__list slider__list">
-              <blockquote class="reviews__item slider__item">
+            <div class="reviews__list">
+              <blockquote class="reviews__item slider__item slider__item--shown">
                 <p class="reviews__text">
                   Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у&nbsp;популярных инстамамочек. В&nbsp;отчаянии, я накупила аксессуаров
                   и игрушек в Мишке, и&nbsp;мои фотографии сразу стали более стильными, а также набирают
@@ -246,7 +252,7 @@
                   <p class="reviews__autor-e-mail">@misssssiskras</p>
                 </div>
               </blockquote>
-              <blockquote class="reviews__item slider__item slider__item--closed">
+              <blockquote class="reviews__item slider__item">
                 <p class="reviews__text">
                   Я сестра молодой мамы, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров
                   и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают
@@ -257,7 +263,7 @@
                   <p class="reviews__autor-e-mail">@misssssiskras2</p>
                 </div>
               </blockquote>
-              <blockquote class="reviews__item slider__item slider__item--closed">
+              <blockquote class="reviews__item slider__item">
                 <p class="reviews__text">
                   Я двоюродная сестра молодой мамы, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров
                   и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают
@@ -270,12 +276,12 @@
               </blockquote>
             </div>
             <div class="reviews__toggles">
-              <button class="reviews__toggle slider__toggle" aria-label="Предыдущий отзыв" type="button">
+              <button class="reviews__toggle slider__prev" aria-label="Предыдущий отзыв" type="button">
                 <svg class="reviews__toggle-icon" aria-hidden="true" focusable="false" width="50" height="26">
                   <use xlink:href="img/sprite-icons/sprite.svg#arrow-left-icon"></use>
                 </svg>
               </button>
-              <button class="reviews__toggle slider__toggle" aria-label="Следующий отзыв" type="button">
+              <button class="reviews__toggle slider__next" aria-label="Следующий отзыв" type="button">
                 <svg class="reviews__toggle-icon" aria-hidden="true" focusable="false" width="50" height="26">
                   <use xlink:href="img/sprite-icons/sprite.svg#arrow-right-icon"></use>
                 </svg>
@@ -318,7 +324,7 @@
           </div>
           <div class="contacts__map">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002735!2d30.32085871559023!3d59.938719169054785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1608049303318!5m2!1sru!2sru"
-              width="320" height="454" allowfullscreen="" aria-hidden="false" tabindex="0">
+              width="320" height="454" allowfullscreen="" aria-hidden="false" tabindex="0" loading="lazy" title="Местоположение магазина на карте">
             </iframe>
           </div>
           <div class="contacts__wrapper">
@@ -403,9 +409,7 @@
 
     <div class="disable-layout"></div>
 
-    <script src="js/main-nav.min.js"></script>
-
-    <script src="js/modal-popup.min.js"></script>
+    <script src="js/main-page-script.min.js"></script>
 
   </body>
 </html>

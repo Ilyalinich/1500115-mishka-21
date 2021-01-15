@@ -88,20 +88,23 @@ const sprite = () => {
 
 exports.sprite = sprite;
 
-// Copy
+// CopyFonts
 
-const copy = (done) => {
-  gulp.src([
-    "source/fonts/*.{woff2,woff}",
-    "source/img/**/*.{jpg,png,svg}",
-  ], {
-    base: "source"
-  })
-    .pipe(gulp.dest("build"))
-  done();
+const copyFonts = () => {
+  return gulp.src("source/fonts/*.{woff2,woff}")
+    .pipe(gulp.dest("build/fonts"))
 }
 
-exports.copy = copy;
+exports.copyFonts = copyFonts;
+
+// CopyImages
+
+const copyImages = () => {
+  return gulp.src("source/img/**/*.{jpg,png,svg}")
+    .pipe(gulp.dest("build/img"))
+}
+
+exports.copyImages = copyImages;
 
 // Clean
 
@@ -149,7 +152,7 @@ const build = gulp.series(
     html,
     scripts,
     sprite,
-    copy,
+    copyFonts,
     images,
     createWebp
   ));
@@ -165,7 +168,8 @@ exports.default = gulp.series(
     html,
     scripts,
     sprite,
-    copy,
+    copyFonts,
+    copyImages,
     createWebp
   ),
   gulp.series(

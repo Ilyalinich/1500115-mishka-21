@@ -49,7 +49,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: flex-start;
 
     position: relative;
   }
@@ -71,7 +70,7 @@
   @media (min-width: $tablet-width) {
     order: -2;
 
-    width: 70%;
+    flex-basis: 65%;
 
     font-size: 43px;
     line-height: 50px;
@@ -89,12 +88,24 @@
   }
 }
 
+.reviews__list {
+  @media (min-width: $tablet-width) {
+    flex-basis: 100%;
+  }
+}
+
 .reviews__item {
   margin: 0;
   margin-bottom: 29px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
+  }
+}
+
+.reviews__autor-info {
+  @media (min-width: $tablet-width) {
+    width: 70%;
   }
 }
 
@@ -194,12 +205,12 @@
 .reviews__write {
   padding: 14px 26px;
   min-width: 175px;
-  min-height: 52px;
 
   @media (min-width: $tablet-width) {
     order: -1;
     align-self: start;
 
     font-size: 17px;
+    max-width: 30%;
   }
 }
