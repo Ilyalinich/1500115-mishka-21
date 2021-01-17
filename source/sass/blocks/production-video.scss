@@ -22,7 +22,7 @@
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: auto 1fr;
-    grid-template-rows: min-content 1fr;
+    grid-template-rows: auto 1fr;
 
     min-height: 455px;
   }
@@ -80,6 +80,7 @@
 
   @media (min-width: $desktop-width) {
     grid-row: 1 / 3;
+    align-self: start;
   }
 }
 
