@@ -21,7 +21,7 @@
   &:first-of-type {
     @media (min-width: $tablet-width) and (max-width: $desktop-width - 1) {
       position: absolute;
-      bottom: -45px;
+      top: 109px;
       z-index: 99;
     }
   }
@@ -29,7 +29,7 @@
   &:last-of-type {
     @media (min-width: $desktop-width) {
       position: absolute;
-      bottom: -45px;
+      top: 108px;
       z-index: 99;
     }
   }

@@ -61,6 +61,8 @@
   @media (min-width: 620px) {
     display: grid;
     grid-template-columns: calc(50% - 27px) 50%;
+    grid-template-rows: repeat(3, auto);
+    grid-auto-flow: column;
     gap: 27px;
   }
 }
@@ -100,32 +102,6 @@
   &--delivery .advantages__icon {
     top: 30px;
     left: 3px;
-  }
-
-  @media (min-width: 620px) {
-    &--ecology {
-      order: 1;
-    }
-
-    &--hand-made {
-      order: 2;
-    }
-
-    &--money {
-      order: 3;
-    }
-
-    &--support {
-      order: 4;
-    }
-
-    &--likes {
-      order: 5;
-    }
-
-    &--delivery {
-      order: 6;
-    }
   }
 }
 
